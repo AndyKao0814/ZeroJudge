@@ -16,3 +16,9 @@ for i in range(n):
         print(f"{x:.2f}% dispose")
     else:
         print(f"{x:.2f}% keep")
+
+
+#這題要注意誤差值
+#若 x < 0 將 x+0.000001 確保output不會出現微小誤差
+#反之，若 x > 0 將 x-0.000001 確保output不會出現微小誤差
+#最後再用格式化字串輸出結果 注意空格
