@@ -11,14 +11,14 @@ def get_feedback(secret, guess):
     secret_counted = [False] * 4
     guess_counted = [False] * 4
     
-    # 第一次遍歷：計數 'A' (位置和數字都正確)
+    # 第一次迴圈：計數 'A' (位置和數字都正確)
     for i in range(4):
         if guess[i] == secret[i]:
             A += 1
             secret_counted[i] = True
             guess_counted[i] = True
     
-    # 第二次遍歷：計數 'B' (數字正確但位置不對)
+    # 第二次迴圈：計數 'B' (數字正確但位置不對)
     for i in range(4):
         if not guess_counted[i]:  # 跳過已經計數的數字
             for j in range(4):
