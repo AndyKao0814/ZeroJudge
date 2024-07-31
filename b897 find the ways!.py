@@ -22,3 +22,6 @@ while True:
         print(int(ans))  # 打印結果（組合數的位數）
     except:
         break  # 偵測所有異常並退出循環
+
+
+#這題用Cn取k的公式會TLE，因為遇到大數時複雜度太大，導致程式效率不佳
